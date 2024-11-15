@@ -5,37 +5,75 @@
     android:id="@+id/idTelaLogin"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fundo_login"
     tools:context=".TelaLoginActivity">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/fundo_login"/>
 
     <ImageView
         android:layout_width="400dp"
         android:layout_height="600dp"
         android:layout_gravity="center"
-        android:src="@drawable/fundo2_login"/>
+        android:src="@drawable/fundo_dois_login" />
 
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:layout_gravity="center"
         android:layout_marginTop="-300dp"
-        android:layout_gravity="center"
-        android:src="@drawable/logo_usuario"/>
-    
+        android:src="@drawable/logo_usuario" />
+
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/idUsuario"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="-70sp"
         android:hint="Insira seu usuário"
-        app:hintTextColor="@color/black">
+        android:textColorHint="#BDBDBD">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:textColor="#A9A9A9" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/idSenha"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="90sp"
+        android:hint="Senha"
+        android:textColorHint="#A9A9A9">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#A9A9A9" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnLogar"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="230dp"
+        android:backgroundTint="#C96716"
+        android:text="Logar"
+        android:textColor="#181D23"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnLo"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="350dp"
+        android:textStyle=""
+        android:layout_marginLeft="-170sp"
+        android:text="esqueci minha senha"
+        android:textColor="#2196F3"
+        android:textSize="15sp" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

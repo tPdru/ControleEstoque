@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppControleDeEstoque"
         tools:targetApi="31">
+
+
         <activity
             android:name=".TelaLoginActivity"
             android:exported="true">
@@ -23,9 +25,11 @@
         </activity>
 
 
+
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
+            android:exported="false"/>
+
 
     </application>
 
