@@ -28,13 +28,14 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="-70sp"
-        android:hint="Insira seu usuário"
-        android:textColorHint="#BDBDBD">
+        android:hint="Usuário"
+        android:textColorHint="#BDBDBD"
+        app:startIconDrawable="@drawable/baseline_account_box">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#A9A9A9" />
+            android:textColor="#A9A9A9"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -44,12 +45,15 @@
         android:layout_gravity="center"
         android:layout_marginTop="90sp"
         android:hint="Senha"
-        android:textColorHint="#A9A9A9">
+        android:textColorHint="#A9A9A9"
+        app:startIconDrawable="@drawable/baseline_lock"
+        app:endIconMode="password_toggle">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#A9A9A9" />
+            android:textColor="#A9A9A9"
+            android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -64,15 +68,26 @@
         android:textSize="25sp" />
 
     <Button
-        android:id="@+id/btnLo"
+        android:id="@+id/btnEsqueciSenha"
         style="@style/Widget.Material3.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="350dp"
-        android:textStyle=""
         android:layout_marginLeft="-170sp"
+        android:layout_marginTop="350dp"
         android:text="esqueci minha senha"
+        android:textColor="#2196F3"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="170sp"
+        android:layout_marginTop="350dp"
+        android:text="Cadastrar"
         android:textColor="#2196F3"
         android:textSize="15sp" />
 
