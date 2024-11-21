@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/idBarraHome"
+        android:enabled="true"
+        android:icon="@drawable/baseline_lock"
+        android:title="Home"
+        />
+    <item
+        android:id="@+id/idBarraMenu"
+        android:enabled="true"
+        android:icon="@drawable/baseline_lock"
+        android:title="Menu"
+        />
+    <item
+        android:id="@+id/idBarraCarrinho"
+        android:enabled="true"
+        android:icon="@drawable/baseline_lock"
+        android:title="Carrinho"
+        />
+    <item
+        android:id="@+id/idBarraUsuario"
+        android:enabled="true"
+        android:icon="@drawable/baseline_lock"
+        android:title="Conta"
+        />
+
+</menu>
